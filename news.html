@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — BuckAI Observatory</title>
+  <meta name="description" content="Latest news, publications, and events from the BuckAI Observatory at The Ohio State University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/buckai_logo.png" class="nav-brand-logo" alt="BuckAI Observatory logo">
+        <span class="nav-brand-text">BuckAI Observatory
+          <span>The Ohio State University</span>
+        </span>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-banner">
+      <div class="page-banner-inner">
+        <h1 class="page-banner-title">News &amp; Highlights</h1>
+        <p class="page-banner-sub">Publications · Funding · Events · Observatory milestones</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:0.5rem">
+          To add a news item, edit <code>data/news.json</code> and add an entry at the top of the array.
+        </p>
+
+        <div class="news-list-full" id="newsList">
+          <p style="color:var(--muted)">Loading…</p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="affil-strip">
+      <div class="affil-strip-inner">
+        <span>College of Arts &amp; Sciences</span>
+        <span class="sep">·</span>
+        <span>School of Earth Sciences</span>
+        <span class="sep">·</span>
+        <span>Department of Geography</span>
+        <span class="sep">·</span>
+        <span>EEOB</span>
+        <span class="sep">·</span>
+        <span>SENR</span>
+        <span class="sep">·</span>
+        <span>TDAI</span>
+        <span class="sep">·</span>
+        <span>Ohio Supercomputer Center</span>
+      </div>
+    </div>
+
+  </div><!-- end page-wrapper -->
+
+  <footer>
+    <div class="container">
+      <p>BuckAI Observatory &nbsp;·&nbsp; College of Arts &amp; Sciences &nbsp;·&nbsp; The Ohio State University &nbsp;·&nbsp; Columbus, OH 43210</p>
+      <p><a href="mailto:moortgat.1@osu.edu">moortgat.1@osu.edu</a> &nbsp;·&nbsp; <a href="https://github.com/buckaiobservatory" target="_blank" rel="noopener">github.com/buckaiobservatory</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    loadNews('newsList', null, renderNewsRow);
+  </script>
+</body>
+</html>

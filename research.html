@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — BuckAI Observatory</title>
+  <meta name="description" content="BuckAI Observatory research themes: hydrology, coastal systems, forests, cryosphere, geodesy, and AI methods for science — connecting artificial intelligence to natural and mathematical sciences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/buckai_logo.png" class="nav-brand-logo" alt="BuckAI Observatory logo">
+        <span class="nav-brand-text">BuckAI Observatory
+          <span>The Ohio State University</span>
+        </span>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-banner">
+      <div class="page-banner-inner">
+        <h1 class="page-banner-title">Research</h1>
+        <p class="page-banner-sub">Six themes connecting AI to the natural and mathematical sciences</p>
+      </div>
+    </div>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section">
+      <div class="container">
+        <p style="font-size:1rem; line-height:1.8; max-width:820px; color:var(--text)">
+          BuckAI's research program applies deep learning, computer vision, and physics-informed AI to large scientific datasets — from the full spectrum of satellite modalities to astronomical surveys and high-dimensional numerical simulations. While Earth observation is our primary focus, our six themes extend from applied remote sensing to the development and advancement of AI algorithms for science more broadly. Affiliated faculty and students span Earth Sciences, Geography, Mathematics, Astronomy, Ecology, and Environmental Sciences.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== THEME 1 ===== -->
+    <section class="section section-alt" id="hydrology">
+      <div class="container">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem">
+          <div class="theme-number">1</div>
+          <span style="font-size:1.75rem">🌊</span>
+          <h2 class="section-title" style="margin:0">Hydrology &amp; Water Resources</h2>
+        </div>
+        <p class="section-lead">
+          From Arctic rivers to the Amazon floodplain, AI tools are transforming our ability to monitor water bodies at global scale, with millimeter to meter precision, at temporal frequencies previously impossible with manual analysis.
+        </p>
+        <div class="theme-grid">
+          <div class="theme-card">
+            <div class="theme-title">River Classification at Sub-Meter Resolution</div>
+            <div class="theme-body">Fully convolutional neural networks trained on 30 cm WorldView/QuickBird commercial imagery achieve &gt;90% precision and recall for river detection. Enables tracking of Arctic river width changes and snowmelt-driven discharge at seasonal to annual timescales.</div>
+            <div class="theme-tags">
+              <span class="tag">FCN</span>
+              <span class="tag">WorldView</span>
+              <span class="tag">Remote Sensing Env. 2022</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Moortgat</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Super-Resolution Water Mapping</div>
+            <div class="theme-body">Deep neural networks applied to free Sentinel-2 multispectral imagery produce 2 m effective water classification maps, extending high-resolution monitoring to the global, cloud-free Sentinel archive rather than costly commercial data.</div>
+            <div class="theme-tags">
+              <span class="tag">Sentinel-2</span>
+              <span class="tag">Super-resolution</span>
+              <span class="tag">J. Hydrology 2023</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Moortgat</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">River Discharge from Hypsometry + AI</div>
+            <div class="theme-body">Combining river channel geometry (hypsometry) with multi-temporal satellite imagery to improve remote estimates of river discharge — bridging the gap between satellite observation and hydrological modeling needs.</div>
+            <div class="theme-tags">
+              <span class="tag">SWOT</span>
+              <span class="tag">Remote Sensing Env. 2024</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Moortgat, Durand, Alsdorf</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Critical Zone Hydrology &amp; Remote Sensing</div>
+            <div class="theme-body">AI analysis of multi-sensor satellite data (VIIRS, MODIS, GRACE) for large-scale monitoring of land-water-vegetation interactions, including changes in terrestrial water storage and land surface hydrology under climate change.</div>
+            <div class="theme-tags">
+              <span class="tag">GRACE</span>
+              <span class="tag">MODIS</span>
+              <span class="tag">Critical Zone</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Costa, Alsdorf, Yeo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THEME 2 ===== -->
+    <section class="section" id="coastal">
+      <div class="container">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem">
+          <div class="theme-number">2</div>
+          <span style="font-size:1.75rem">🌊</span>
+          <h2 class="section-title" style="margin:0">Coastal &amp; Marine Systems</h2>
+        </div>
+        <p class="section-lead">
+          The world's coastlines are among the most data-rich and most vulnerable environments on Earth. BuckAI applies physics-informed AI, gravity missions, and satellite altimetry to track bathymetry, sea level, and marine ecosystem health.
+        </p>
+        <div class="theme-grid">
+          <div class="theme-card">
+            <div class="theme-title">Coastal Bathymetry via Physics-Informed AI</div>
+            <div class="theme-body">Physics-informed neural networks (PINNs) fusing ICESat-2 lidar, Sentinel-2 multispectral imagery, and hydrodynamic constraints to map shallow-water depths with unprecedented accuracy. NSF CAIG proposal pending ($1.5M, 2026–2029).</div>
+            <div class="theme-tags">
+              <span class="tag">PINNs</span>
+              <span class="tag">ICESat-2</span>
+              <span class="tag">Sentinel-2</span>
+              <span class="tag">WACV 2025</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Moortgat</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Sea-Level Change &amp; Satellite Geodesy</div>
+            <div class="theme-body">Combining GRACE gravity data, satellite altimetry, and GPS measurements to separate ice-mass loss, thermal expansion, and hydrological contributions to sea-level rise — with AI used to improve signal separation and downscaling.</div>
+            <div class="theme-tags">
+              <span class="tag">GRACE/GRACE-FO</span>
+              <span class="tag">Altimetry</span>
+              <span class="tag">Sea Level</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Shum, Gómez</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Coral Reef &amp; Ocean Heat Stress Monitoring</div>
+            <div class="theme-body">AI analysis of infrared and microwave satellite data (NOAA CoralTemp, MODIS) to detect ocean heat stress events, map coral bleaching risk, and track long-term reef ecosystem change — supporting conservation and fisheries management.</div>
+            <div class="theme-tags">
+              <span class="tag">MODIS</span>
+              <span class="tag">Ocean Heat Stress</span>
+              <span class="tag">Coral Bleaching</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Costa</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Wetland Mapping &amp; Carbon Dynamics</div>
+            <div class="theme-body">Multi-sensor satellite analysis to map wetland extent, inundation dynamics, and carbon fluxes — critical for both climate mitigation accounting and coastal ecosystem management.</div>
+            <div class="theme-tags">
+              <span class="tag">SAR</span>
+              <span class="tag">Optical</span>
+              <span class="tag">Carbon</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Yeo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THEME 3 ===== -->
+    <section class="section section-alt" id="forests">
+      <div class="container">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem">
+          <div class="theme-number">3</div>
+          <span style="font-size:1.75rem">🌳</span>
+          <h2 class="section-title" style="margin:0">Forests &amp; Ecosystems</h2>
+        </div>
+        <p class="section-lead">
+          Tropical deforestation, forest carbon stocks, and biodiversity loss demand global, continuous monitoring. BuckAI develops AI tools that turn satellite archives into actionable environmental intelligence — from Uganda to the Sahel.
+        </p>
+        <div class="theme-grid">
+          <div class="theme-card">
+            <div class="theme-title">Deforestation &amp; Agroforestry in Sub-Saharan Africa</div>
+            <div class="theme-body">AI-driven satellite monitoring of forest loss and agroforestry expansion in Uganda and the Sahel, supporting CGIAR/SPIA food security and climate mitigation research ($1.25M, 2025–2028). Uses Sentinel-1/2, Landsat, and PlanetScope imagery with semantic segmentation models.</div>
+            <div class="theme-tags">
+              <span class="tag">Sentinel</span>
+              <span class="tag">Semantic Segmentation</span>
+              <span class="tag">CGIAR/SPIA</span>
+              <span class="tag-scarlet tag">Active</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Moortgat</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Forest Carbon Stocks &amp; Biomass from LiDAR</div>
+            <div class="theme-body">Combining spaceborne LiDAR (GEDI, ICESat-2) with optical and SAR data and deep learning to estimate forest biomass, carbon stocks, and forest structure at national and global scales — inputs to carbon crediting and climate models.</div>
+            <div class="theme-tags">
+              <span class="tag">GEDI</span>
+              <span class="tag">LiDAR</span>
+              <span class="tag">Forest Biomass</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Zhao</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Biodiversity &amp; Species Distribution Modeling</div>
+            <div class="theme-body">Machine learning models linking remote sensing variables (vegetation structure, land cover, phenology) to species occurrence data, enabling spatial predictions of biodiversity patterns and responses to land-use and climate change.</div>
+            <div class="theme-tags">
+              <span class="tag">Macroecology</span>
+              <span class="tag">Species Distribution</span>
+              <span class="tag">Trait-Based Ecology</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Jarzyna</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Land Use, Land Cover &amp; Urban Change</div>
+            <div class="theme-body">AI methods for large-scale land use and land cover classification, urban expansion mapping, and analysis of human-environment interactions — linking spatial data to socioeconomic and environmental outcomes.</div>
+            <div class="theme-tags">
+              <span class="tag">LULC</span>
+              <span class="tag">Urban Remote Sensing</span>
+              <span class="tag">GIS</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> D. Liu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THEME 4 ===== -->
+    <section class="section" id="cryo">
+      <div class="container">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem">
+          <div class="theme-number">4</div>
+          <span style="font-size:1.75rem">🧊</span>
+          <h2 class="section-title" style="margin:0">Cryosphere &amp; Climate</h2>
+        </div>
+        <p class="section-lead">
+          Ice sheets, mountain glaciers, and snow cover are Earth's largest freshwater stores and among its most sensitive climate indicators. AI applied to multi-decadal satellite records reveals the pace and pattern of cryospheric change.
+        </p>
+        <div class="theme-grid">
+          <div class="theme-card">
+            <div class="theme-title">Ice Sheet Dynamics &amp; Glacial Retreat</div>
+            <div class="theme-body">Multi-sensor analysis of Greenland and Antarctic ice sheet change — combining optical, SAR, and altimetry data with deep learning to map ice velocity, margin retreat, surface mass balance, and subglacial hydrology at continental scale.</div>
+            <div class="theme-tags">
+              <span class="tag">Sentinel-1/2</span>
+              <span class="tag">ICESat-2</span>
+              <span class="tag">Ice Dynamics</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Howat</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Mountain Glaciers &amp; Water Security</div>
+            <div class="theme-body">AI and remote sensing to quantify glacier mass balance, retreat rates, and downstream water availability in the Andes and Himalaya — regions where millions depend on glacial meltwater for agriculture and drinking water.</div>
+            <div class="theme-tags">
+              <span class="tag">Andes</span>
+              <span class="tag">Himalaya</span>
+              <span class="tag">Water Security</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Mark</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Snow Remote Sensing &amp; Runoff Prediction</div>
+            <div class="theme-body">Machine learning models for snow water equivalent estimation from multi-frequency microwave and optical imagery — improving seasonal streamflow forecasts critical for water resource management in snowmelt-dominated basins.</div>
+            <div class="theme-tags">
+              <span class="tag">AMSR</span>
+              <span class="tag">Snow Water Equivalent</span>
+              <span class="tag">Streamflow</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Durand, Quiring</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Ice Mass Balance from Satellite Geodesy</div>
+            <div class="theme-body">Combining GRACE gravity time-series, satellite altimetry, and GPS uplift measurements to separate ice-mass loss from hydrological changes and glacial isostatic adjustment — with AI improving signal decomposition.</div>
+            <div class="theme-tags">
+              <span class="tag">GRACE</span>
+              <span class="tag">Glacial Isostasy</span>
+              <span class="tag">GPS</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Shum, Gómez</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THEME 5 ===== -->
+    <section class="section section-alt" id="geodesy">
+      <div class="container">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem">
+          <div class="theme-number">5</div>
+          <span style="font-size:1.75rem">⚡</span>
+          <h2 class="section-title" style="margin:0">Geodesy &amp; Subsurface</h2>
+        </div>
+        <p class="section-lead">
+          Precise space-based geodesy, combined with AI-driven surface analysis, extends Earth observation into the subsurface — enabling prospecting for clean energy resources, earthquake early warning, and continental-scale deformation monitoring.
+        </p>
+        <div class="theme-grid">
+          <div class="theme-card">
+            <div class="theme-title">Natural Hydrogen Reservoir Prospecting</div>
+            <div class="theme-body">Semantic segmentation of "fairy circles" (semicircular surface depressions, or SCDs) using Segment Anything Model (SAM) + Sentinel-2 + Copernicus DEM for global mapping of potential natural hydrogen reservoirs. Covered by <em>New Scientist</em>, EurekAlert, and 10+ outlets; industry partner Koloma Inc. ARPA-E subcontract active.</div>
+            <div class="theme-tags">
+              <span class="tag">SAM</span>
+              <span class="tag">Sentinel-2</span>
+              <span class="tag">Natural Hydrogen</span>
+              <span class="tag-scarlet tag">Active</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Moortgat</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">GPS Seismology &amp; Earthquake Monitoring</div>
+            <div class="theme-body">Real-time and near-real-time processing of high-rate GNSS data for seismic waveform extraction, earthquake source characterization, and tsunami early warning — including AI methods for rapid magnitude and slip estimation.</div>
+            <div class="theme-tags">
+              <span class="tag">GNSS</span>
+              <span class="tag">Earthquake</span>
+              <span class="tag">Tsunami Warning</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Crowell</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Satellite Gravity &amp; Geoid Modeling</div>
+            <div class="theme-body">Advanced processing and AI-assisted interpretation of GRACE/GRACE-FO gravity time-series for hydrology, oceanography, solid Earth, and cryosphere applications — including improved downscaling and signal separation methods.</div>
+            <div class="theme-tags">
+              <span class="tag">GRACE-FO</span>
+              <span class="tag">Geoid</span>
+              <span class="tag">Geodesy</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Shum, Gómez</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Critical Zone &amp; Subsurface Geochemistry</div>
+            <div class="theme-body">AI integration of remote sensing with in-situ measurements to study weathering, hydrology, and biogeochemical cycling in Earth's critical zone — from surface vegetation to bedrock — and track changes driven by climate and land use.</div>
+            <div class="theme-tags">
+              <span class="tag">Critical Zone</span>
+              <span class="tag">VIIRS</span>
+              <span class="tag">Geochemistry</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Costa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THEME 6 ===== -->
+    <section class="section" id="ai-methods">
+      <div class="container">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem">
+          <div class="theme-number">6</div>
+          <span style="font-size:1.75rem">🧮</span>
+          <h2 class="section-title" style="margin:0">AI Methods &amp; Scientific Computing</h2>
+        </div>
+        <p class="section-lead">
+          Advancing the AI algorithms themselves — developing scientific machine learning, uncertainty quantification, self-supervised learning, and ML-enhanced numerical methods that benefit the entire natural and mathematical sciences community.
+        </p>
+        <div class="theme-grid">
+          <div class="theme-card">
+            <div class="theme-title">Scientific Machine Learning &amp; Uncertainty Quantification</div>
+            <div class="theme-body">Developing neural network architectures and training strategies tailored to scientific problems: learning from small labeled datasets, quantifying prediction uncertainty, enforcing physical constraints, and constructing data-driven reduced-order models for complex dynamical systems.</div>
+            <div class="theme-tags">
+              <span class="tag">Scientific ML</span>
+              <span class="tag">UQ</span>
+              <span class="tag">Dynamical Systems</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Xiu</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">AI for Large Astronomical Surveys</div>
+            <div class="theme-body">Self-supervised learning, generative models, and foundation model approaches for spectroscopic and photometric survey data. Developing methods that transfer across observational modalities and enable efficient scientific inference from petabyte-scale astronomical archives.</div>
+            <div class="theme-tags">
+              <span class="tag">Self-Supervised Learning</span>
+              <span class="tag">Foundation Models</span>
+              <span class="tag">Spectroscopy</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Ting</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">ML-Enhanced Numerical Methods</div>
+            <div class="theme-body">Combining classical numerical analysis with modern machine learning to build faster, more accurate solvers for differential equations and high-dimensional problems. Applications include hybrid PDE solvers, learned preconditioners, and neural-network-accelerated simulations.</div>
+            <div class="theme-tags">
+              <span class="tag">Numerical Analysis</span>
+              <span class="tag">PDEs</span>
+              <span class="tag">Hybrid Solvers</span>
+            </div>
+            <div class="theme-people"><strong>PI:</strong> Han Veiga</div>
+          </div>
+          <div class="theme-card">
+            <div class="theme-title">Cross-Domain Foundation Models</div>
+            <div class="theme-body">A cross-cutting effort bringing together methods expertise (Mathematics, Astronomy) and domain data (Earth observation, ecology) to build and fine-tune foundation models that generalize across scientific disciplines — a key long-term goal of the Observatory.</div>
+            <div class="theme-tags">
+              <span class="tag">Foundation Models</span>
+              <span class="tag">Transfer Learning</span>
+              <span class="tag">Cross-Domain</span>
+            </div>
+            <div class="theme-people"><strong>PIs:</strong> Xiu, Ting, Han Veiga, Moortgat</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AFFILIATIONS ===== -->
+    <div class="affil-strip">
+      <div class="affil-strip-inner">
+        <span>College of Arts &amp; Sciences</span>
+        <span class="sep">·</span>
+        <span>School of Earth Sciences</span>
+        <span class="sep">·</span>
+        <span>Department of Geography</span>
+        <span class="sep">·</span>
+        <span>Department of Mathematics</span>
+        <span class="sep">·</span>
+        <span>Department of Astronomy</span>
+        <span class="sep">·</span>
+        <span>EEOB</span>
+        <span class="sep">·</span>
+        <span>SENR</span>
+        <span class="sep">·</span>
+        <span>TDAI</span>
+        <span class="sep">·</span>
+        <span>Ohio Supercomputer Center</span>
+      </div>
+    </div>
+
+  </div><!-- end page-wrapper -->
+
+  <footer>
+    <div class="container">
+      <p>BuckAI Observatory &nbsp;·&nbsp; College of Arts &amp; Sciences &nbsp;·&nbsp; The Ohio State University &nbsp;·&nbsp; Columbus, OH 43210</p>
+      <p><a href="mailto:moortgat.1@osu.edu">moortgat.1@osu.edu</a> &nbsp;·&nbsp; <a href="https://github.com/buckaiobservatory" target="_blank" rel="noopener">github.com/buckaiobservatory</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

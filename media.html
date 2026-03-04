@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media — BuckAI Observatory</title>
+  <meta name="description" content="Videos and media coverage of the BuckAI Observatory and its research at The Ohio State University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    .video-item {}
+    .video-caption {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+    }
+    .video-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+      line-height: 1.6;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      background: #000;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    @media (max-width: 600px) {
+      .video-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/buckai_logo.png" class="nav-brand-logo" alt="BuckAI Observatory logo">
+        <span class="nav-brand-text">BuckAI Observatory
+          <span>The Ohio State University</span>
+        </span>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-banner">
+      <div class="page-banner-inner">
+        <h1 class="page-banner-title">Media</h1>
+        <p class="page-banner-sub">Videos, interviews, and press coverage</p>
+      </div>
+    </div>
+
+    <!-- ===== VIDEOS ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">AGU TV</h2>
+        <p class="section-lead">
+          Director Joachim Moortgat was featured by the American Geophysical Union (AGU) in two films highlighting BuckAI's research in AI-powered Earth observation and natural hydrogen exploration.
+        </p>
+
+        <div class="video-grid">
+          <div class="video-item">
+            <div class="video-caption">Thought Leadership Film</div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/BqAkyLukwXI?si=E6__EkgB3ef-PLh9"
+                title="AGU TV Thought Leadership Film — Joachim Moortgat"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <p class="video-desc">AGU TV thought leadership feature on AI-driven Earth observation and the founding of the BuckAI Observatory at The Ohio State University.</p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-caption">Research Overview</div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/FT0PJm9A2ac?si=jXV2tk3B1aRZYq1b"
+                title="Joachim Moortgat — Research Overview"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <p class="video-desc">Overview of BuckAI Observatory research: satellite-based river mapping, coastal bathymetry, natural hydrogen prospecting, and deforestation monitoring in Sub-Saharan Africa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRESS ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Press Coverage</h2>
+        <p class="section-lead">Selected media coverage of BuckAI Observatory research.</p>
+
+        <div class="news-list-full">
+          <div class="news-row">
+            <div class="news-row-date">Dec 2023</div>
+            <div>
+              <div class="news-row-headline"><em>New Scientist</em> — AI spots signs of natural hydrogen underground</div>
+              <div class="news-row-body">Coverage of BuckAI's AGU presentation on AI-based global mapping of semicircular depressions (fairy circles) as surface indicators of natural hydrogen reservoirs. Research conducted with industry partner Koloma Inc.</div>
+            </div>
+          </div>
+          <div class="news-row">
+            <div class="news-row-date">Dec 2023</div>
+            <div>
+              <div class="news-row-headline">EurekAlert! and 10+ international outlets</div>
+              <div class="news-row-body">Broad international media pickup of the natural hydrogen prospecting work, with coverage in science news outlets across North America, Europe, and Asia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="affil-strip">
+      <div class="affil-strip-inner">
+        <span>College of Arts &amp; Sciences</span>
+        <span class="sep">·</span>
+        <span>School of Earth Sciences</span>
+        <span class="sep">·</span>
+        <span>Department of Geography</span>
+        <span class="sep">·</span>
+        <span>EEOB</span>
+        <span class="sep">·</span>
+        <span>SENR</span>
+        <span class="sep">·</span>
+        <span>TDAI</span>
+        <span class="sep">·</span>
+        <span>Ohio Supercomputer Center</span>
+      </div>
+    </div>
+
+  </div><!-- end page-wrapper -->
+
+  <footer>
+    <div class="container">
+      <p>BuckAI Observatory &nbsp;·&nbsp; College of Arts &amp; Sciences &nbsp;·&nbsp; The Ohio State University &nbsp;·&nbsp; Columbus, OH 43210</p>
+      <p><a href="mailto:moortgat.1@osu.edu">moortgat.1@osu.edu</a> &nbsp;·&nbsp; <a href="https://github.com/buckaiobservatory" target="_blank" rel="noopener">github.com/buckaiobservatory</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

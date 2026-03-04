@@ -1,0 +1,51 @@
+[
+  {
+    "date": "Jan 2026",
+    "category": "Paper",
+    "headline": "Coastal bathymetry with Sentinel-2 presented at WACV 2025",
+    "body": "New paper <em>From Bands to Depth: Understanding Bathymetry Decisions on Sentinel-2</em> presented at the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025).",
+    "url": "https://doi.org/10.48550/arXiv.2601.12636"
+  },
+  {
+    "date": "Dec 2025",
+    "category": "Paper",
+    "headline": "Vapor–liquid equilibrium of water–hydrogen mixtures published in PLOS ONE",
+    "body": "BuckAI modeling study on H₂–water VLE using a Cubic-Plus-Association Equation-of-State is now available in PLOS ONE, supporting natural hydrogen reservoir research.",
+    "url": "https://doi.org/10.1371/journal.pone.0332157"
+  },
+  {
+    "date": "Oct 2025",
+    "category": "Event",
+    "headline": "BuckAI Innovation & Data Visualization Space opens in Mendenhall Laboratory",
+    "body": "The Observatory's dedicated collaboration and visualization space officially opens, providing a hub for weekly research seminars, GPU-powered analysis, and visitor demos.",
+    "url": null
+  },
+  {
+    "date": "Aug 2025",
+    "category": "Observatory",
+    "headline": "BuckAI Observatory founded with $1M OSU seed investment",
+    "body": "The BuckAI Observatory is officially launched as OSU's interdisciplinary center for AI-powered Earth observation, with five-year seed funding (2025–2030) from the College of Arts and Sciences.",
+    "url": null
+  },
+  {
+    "date": "2025",
+    "category": "Funding",
+    "headline": "CGIAR/SPIA deforestation monitoring project awarded ($1.25M, 2025–2028)",
+    "body": "Three-year collaborative grant to develop AI satellite tools for tracking deforestation and agroforestry in Sub-Saharan Africa, in partnership with the CGIAR Standing Panel on Impact Assessment.",
+    "url": null
+  },
+  {
+    "date": "Dec 2023",
+    "category": "Event",
+    "headline": "AI mapping of natural hydrogen reservoirs presented at AGU Fall Meeting",
+    "body": "Semantic segmentation of 'fairy circles' (semicircular depressions) using SAM + Sentinel-2 + Copernicus DEM presented at AGU. Covered by <em>New Scientist</em>, EurekAlert, and 10+ international outlets. Industry partner: Koloma Inc.",
+    "url": null
+  },
+  {
+    "date": "Nov 2022",
+    "category": "Paper",
+    "headline": "River classification at sub-meter resolution published in Remote Sensing of Environment",
+    "body": "Fully convolutional neural networks applied to WorldView/QuickBird commercial imagery (30 cm) achieve >90% precision and recall for river mapping, enabling tracking of Arctic river dynamics.",
+    "url": "https://doi.org/10.1016/j.rse.2022.113279"
+  }
+]
