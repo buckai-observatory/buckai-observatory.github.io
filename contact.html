@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 </head>
 <body>
 
@@ -123,6 +124,13 @@
 
         </div><!-- end contact-grid -->
 
+        <!-- 360° Panorama -->
+        <div style="margin-top:2rem">
+          <h2 class="section-title" style="margin-bottom:0.75rem">BuckAI Innovation &amp; Data Visualization Space</h2>
+          <p style="font-size:0.9rem; color:var(--muted); margin-bottom:1rem">Drag to explore · Scroll to zoom</p>
+          <div id="panorama" style="width:100%; height:420px; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border)"></div>
+        </div>
+
         <!-- Google Maps -->
         <div style="margin-top:2rem; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border)">
           <iframe
@@ -168,5 +176,17 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <script>
+    pannellum.viewer('panorama', {
+      type: 'equirectangular',
+      panorama: 'images/BuckAI_Space_360.jpg',
+      autoLoad: true,
+      autoRotate: -3,
+      compass: false,
+      showZoomCtrl: true,
+      showFullscreenCtrl: true
+    });
+  </script>
 </body>
 </html>
