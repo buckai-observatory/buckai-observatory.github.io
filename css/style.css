@@ -114,6 +114,17 @@ ul { list-style: none; }
   border-radius: 0;
   border-bottom-color: var(--scarlet);
 }
+.nav-links li a.nav-give {
+  background: var(--scarlet);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+}
+.nav-links li a.nav-give:hover {
+  background: var(--scarlet-hover);
+  color: #fff;
+}
 .nav-hamburger {
   display: none;
   flex-direction: column;
