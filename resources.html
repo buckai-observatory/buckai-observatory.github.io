@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — BuckAI Observatory</title>
+  <meta name="description" content="Open handbooks, course materials, and reusable AI pipelines from the BuckAI Observatory at The Ohio State University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .resource-intro {
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 820px;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .resource-category {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.4rem;
+    }
+    .resource-category h2 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .resource-category-icon { font-size: 1.6rem; }
+    .resource-category-lead {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 760px;
+      margin-bottom: 1.5rem;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .resource-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--scarlet);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .resource-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .resource-card p {
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+    .resource-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .resource-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--scarlet);
+      background: rgba(187, 0, 0, 0.07);
+      border: 1px solid rgba(187, 0, 0, 0.2);
+      border-radius: 999px;
+      padding: 0.15rem 0.65rem;
+    }
+    .resource-credits {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .resource-credits strong { color: var(--text); }
+    .resource-card .btn {
+      align-self: flex-start;
+    }
+
+    .resource-placeholder {
+      background: var(--surface2);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      max-width: 820px;
+    }
+    .resource-placeholder strong { color: var(--text); }
+
+    .resource-contribute {
+      margin-top: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 820px;
+      line-height: 1.75;
+    }
+    .resource-contribute a { color: var(--scarlet); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/buckai_logo.png" class="nav-brand-logo" alt="BuckAI Observatory logo">
+        <span class="nav-brand-text">BuckAI Observatory
+          <span>The Ohio State University</span>
+        </span>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="giving.html" class="nav-give">Giving</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-banner">
+      <div class="page-banner-inner">
+        <h1 class="page-banner-title">Resources</h1>
+        <p class="page-banner-sub">Open handbooks, course materials, and reusable AI pipelines from the BuckAI community</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <p class="resource-intro">
+          The BuckAI Observatory maintains a growing collection of open, freely available resources — handbooks for high-performance computing, course materials for AI in the Earth and environmental sciences, and reusable pipelines for geospatial and remote sensing AI. These resources are developed by BuckAI faculty, students, and collaborators across The Ohio State University, and are intended for the broader research and education community.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HANDBOOKS & GUIDES ===== -->
+    <section class="section section-alt" id="handbooks">
+      <div class="container">
+        <div class="resource-category">
+          <span class="resource-category-icon">📘</span>
+          <h2>Handbooks &amp; Guides</h2>
+        </div>
+        <p class="resource-category-lead">
+          Practical, self-contained guides covering tools and workflows used across BuckAI research.
+        </p>
+
+        <div class="resource-grid">
+          <div class="resource-card">
+            <h3>BuckAI HPC Handbook</h3>
+            <div class="resource-meta">
+              <span class="resource-tag">Quarto</span>
+              <span class="resource-tag">HPC</span>
+              <span class="resource-tag">OSC</span>
+            </div>
+            <p>
+              A practical handbook for using high-performance computing — including the Ohio Supercomputer Center — for AI and deep learning research. Covers environment setup, GPU workflows, job submission, common pitfalls, and best practices for training large models on satellite and scientific data.
+            </p>
+            <div class="resource-credits"><strong>Maintainer:</strong> Moortgat</div>
+            <a href="https://buckai-observatory.org/buckai-hpc-handbook/"
+               class="btn btn-scarlet"
+               target="_blank"
+               rel="noopener noreferrer">Open handbook →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COURSES & TEACHING MATERIALS ===== -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="resource-category">
+          <span class="resource-category-icon">🎓</span>
+          <h2>Courses &amp; Teaching Materials</h2>
+        </div>
+        <p class="resource-category-lead">
+          Open lecture notes, Jupyter notebooks, and lab materials from BuckAI faculty and contributors.
+        </p>
+
+        <div class="resource-placeholder">
+          <strong>Coming soon.</strong> We are preparing public releases of <em>AI in the Geosciences</em> (notebook-based course materials) and contributed lecture/lab notebooks from affiliated faculty. If you are a BuckAI affiliate interested in contributing course materials, please <a href="contact.html">get in touch</a>.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PIPELINES & CODE ===== -->
+    <section class="section section-alt" id="pipelines">
+      <div class="container">
+        <div class="resource-category">
+          <span class="resource-category-icon">⚙️</span>
+          <h2>Pipelines &amp; Code</h2>
+        </div>
+        <p class="resource-category-lead">
+          Reusable AI and geospatial pipelines, model implementations, and analysis tools — open-sourced for the community.
+        </p>
+
+        <div class="resource-placeholder">
+          <strong>Coming soon.</strong> Reusable (geo-)AI pipelines from BuckAI research are being prepared for public release on our <a href="https://github.com/buckai-observatory" target="_blank" rel="noopener">GitHub organization</a>. Check back soon, or watch the org for new repositories.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="resource-contribute">
+          <strong>Want to contribute?</strong> BuckAI welcomes shared resources from affiliated faculty, students, and collaborators — handbooks, course materials, datasets, and code. Please <a href="contact.html">contact the Observatory</a> to discuss adding a resource.
+        </div>
+      </div>
+    </section>
+
+    <div class="affil-strip">
+      <div class="affil-strip-inner">
+        <a href="https://artsandsciences.osu.edu" target="_blank" rel="noopener">College of Arts &amp; Sciences</a>
+        <span class="sep">·</span>
+        <a href="https://earthsciences.osu.edu" target="_blank" rel="noopener">School of Earth Sciences</a>
+        <span class="sep">·</span>
+        <a href="https://geography.osu.edu" target="_blank" rel="noopener">Department of Geography</a>
+        <span class="sep">·</span>
+        <a href="https://math.osu.edu" target="_blank" rel="noopener">Department of Mathematics</a>
+        <span class="sep">·</span>
+        <a href="https://astronomy.osu.edu" target="_blank" rel="noopener">Department of Astronomy</a>
+        <span class="sep">·</span>
+        <a href="https://eeob.osu.edu" target="_blank" rel="noopener">EEOB</a>
+        <span class="sep">·</span>
+        <a href="https://senr.osu.edu" target="_blank" rel="noopener">SENR</a>
+        <span class="sep">·</span>
+        <a href="https://tdai.osu.edu" target="_blank" rel="noopener">TDAI</a>
+        <span class="sep">·</span>
+        <a href="https://osc.edu" target="_blank" rel="noopener">Ohio Supercomputer Center</a>
+      </div>
+    </div>
+
+  </div><!-- end page-wrapper -->
+
+  <footer>
+    <div class="container">
+      <p>BuckAI Observatory &nbsp;·&nbsp; College of Arts &amp; Sciences &nbsp;·&nbsp; The Ohio State University &nbsp;·&nbsp; Columbus, OH 43210</p>
+      <p><a href="mailto:moortgat.1@osu.edu">moortgat.1@osu.edu</a> &nbsp;·&nbsp; <a href="https://github.com/buckai-observatory" target="_blank" rel="noopener">github.com/buckai-observatory</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
