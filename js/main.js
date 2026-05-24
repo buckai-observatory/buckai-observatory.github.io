@@ -71,8 +71,12 @@ function catClass(c) {
 
 /* Cards (index.html) */
 function renderNewsCard(item) {
-  const link = item.url
-    ? `<a class="news-link" href="${item.url}" target="_blank" rel="noopener">Read more →</a>` : '';
+  let link = '';
+  if (item.url) {
+    link = `<a class="news-link" href="${item.url}" target="_blank" rel="noopener">Read more →</a>`;
+  } else if (item.details) {
+    link = `<a class="news-link" href="news.html">Read more →</a>`;
+  }
   return `<div class="news-card">
     <div class="news-meta">
       <span class="news-date">${item.date}</span>
@@ -88,12 +92,18 @@ function renderNewsCard(item) {
 function renderNewsRow(item) {
   const link = item.url
     ? ` <a href="${item.url}" target="_blank" rel="noopener" style="color:var(--teal)">→</a>` : '';
+  const details = item.details
+    ? `<details class="news-row-details">
+         <summary><span class="news-row-toggle-closed">Read more</span><span class="news-row-toggle-open">Show less</span></summary>
+         <div class="news-row-details-body">${item.details}</div>
+       </details>` : '';
   return `<div class="news-row">
     <div class="news-row-date">${item.date}</div>
     <div>
       <div class="news-row-headline">${item.headline}${link}</div>
       <div class="news-row-body">${item.body}</div>
       <span class="news-category ${catClass(item.category)}" style="margin-top:0.45rem;display:inline-block">${item.category}</span>
+      ${details}
     </div>
   </div>`;
 }
