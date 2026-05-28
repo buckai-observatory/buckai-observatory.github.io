@@ -1,5 +1,14 @@
 /* ===== BuckAI Observatory — main.js ===== */
 
+/* ---- Cloudflare Web Analytics ---- */
+(function () {
+  const s = document.createElement('script');
+  s.defer = true;
+  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  s.setAttribute('data-cf-beacon', JSON.stringify({ token: 'f8626d594f634f7c8462eff840b9e486' }));
+  document.head.appendChild(s);
+})();
+
 /* ---- Active nav link ---- */
 (function () {
   const page = location.pathname.split('/').pop() || 'index.html';
