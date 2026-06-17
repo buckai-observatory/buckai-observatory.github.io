@@ -845,3 +845,43 @@ footer a:hover { color: #fff; }
   .hero-stats { gap: 1rem 1.5rem; }
   .hero-divider { display: none; }
 }
+
+/* =====================================================================
+   Within-page navigation (jump-to-section strip)
+   ===================================================================== */
+html { scroll-behavior: smooth; }
+:where(section[id], h2[id], h3[id]) { scroll-margin-top: 84px; } /* fixed nav 66px + buffer */
+
+.page-toc {
+  background: var(--surface2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.7rem 1.25rem;
+  font-size: 0.88rem;
+}
+.page-toc-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+.page-toc-label {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+}
+.page-toc a {
+  color: var(--scarlet);
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.page-toc a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  .page-toc { font-size: 0.82rem; padding: 0.55rem 0.75rem; }
+}
