@@ -60,13 +60,14 @@ function initPhotoFallbacks() {
 document.addEventListener('DOMContentLoaded', initPhotoFallbacks);
 
 /* ---- News loader ---- */
-async function loadNews(containerId, limit, renderFn) {
+async function loadNews(containerId, limit, renderFn, filterFn) {
   const container = document.getElementById(containerId);
   if (!container) return;
   try {
     const resp  = await fetch('data/news.json');
     const items = await resp.json();
-    const show  = limit ? items.slice(0, limit) : items;
+    const filtered = filterFn ? items.filter(filterFn) : items;
+    const show  = limit ? filtered.slice(0, limit) : filtered;
     container.innerHTML = show.map(renderFn).join('');
     initPhotoFallbacks();
   } catch (e) {
